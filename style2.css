@@ -298,13 +298,14 @@ footer p {
   .allbox {
     display: none;
   }
-  .container1 {
-    display: none;
-  }
+
   .left-bottom {
     display: none;
   }
   .left {
+    display: none;
+  }
+  .container1 {
     display: none;
   }
 }

@@ -6,7 +6,6 @@ async function showPhone() {
   const respo = await fetch(api);
   let data = await respo.json();
   data = data.slice(12, 22);
-
   console.log(data);
 
   const namePhone = document.querySelectorAll("#name");
