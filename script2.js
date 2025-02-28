@@ -19,3 +19,17 @@ async function showPhone() {
   }
 }
 showPhone();
+
+document.getElementById("search").addEventListener("keyup", () => {
+  let info = document.getElementById("search").value.toUpperCase();
+  let boxs = document.querySelectorAll(".ingrid");
+
+  boxs.forEach((box) => {
+    let names = box.querySelector("#name").innerText.toUpperCase();
+    if (names.includes(info)) {
+      box.style.display = "block";
+    } else {
+      box.style.display = "none";
+    }
+  });
+});
